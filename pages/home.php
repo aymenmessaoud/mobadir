@@ -239,7 +239,7 @@ include __DIR__ . '/../partials/header.php';
                     جواز التطوع الرقمي: وثيقة رسمية تثبت مساهمتك المجتمعية
                 </h2>
                 <p style="color:var(--c-text-muted);line-height:1.85;margin-bottom:var(--sp-5);">
-                    مع <strong>مُبادِر</strong>، تُسجَّل كل ساعة تطوعية آلياً وتُعتمد رسمياً من إدارة مؤسسات الشباب.
+                    مع <strong><?= APP_NAME ?></strong>، تُسجَّل كل ساعة تطوعية آلياً وتُعتمد رسمياً من إدارة مؤسسات الشباب.
                     احصل على شهادة موثقة برمز QR قابلة للرفع في سيرتك الذاتية وملفاتك الجامعية والمهنية.
                 </p>
                 <div style="display:flex;gap:var(--sp-3);flex-wrap:wrap;">

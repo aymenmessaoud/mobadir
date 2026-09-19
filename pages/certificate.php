@@ -159,7 +159,7 @@ if ($is_single_campaign) {
         <div class="cert-hours-box">
             <div class="cert-hours-number"><?= $single_camp['hours_awarded'] ?> ساعات معتمدة</div>
             <div style="font-size: 0.85rem; font-weight: 700; color: #065f46; margin-top: 4px;">
-                مودعة رسمياً في جواز التطوع الرقمي الموحد (منصة مُبادِر)
+                مودعة رسمياً في جواز التطوع الرقمي الموحد (منصة <?= APP_NAME ?>)
             </div>
         </div>
 
@@ -217,7 +217,7 @@ if ($is_single_campaign) {
         <div class="cert-hours-box">
             <div class="cert-hours-number"><?= $total_hours ?> ساعة تطوعية</div>
             <div style="font-size: 0.85rem; font-weight: 700; color: #065f46; margin-top: 4px;">
-                موثقة في السجل الرقمي الوطني (منصة مُبادِر)
+                موثقة في السجل الرقمي الوطني (منصة <?= APP_NAME ?>)
             </div>
         </div>
 

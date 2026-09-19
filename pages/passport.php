@@ -98,7 +98,7 @@ include __DIR__ . '/../partials/header.php';
             <div class="passport-card">
                 <div class="passport-head">
                     <div>
-                        <div class="passport-badge-label">مُبادِر • MOBADIR</div>
+                        <div class="passport-badge-label"><?= APP_NAME ?></div>
                         <div style="font-size:0.75rem; color:rgba(255,255,255,0.7);">بطاقة متطوع مؤسسات الشباب</div>
                     </div>
                     <div class="passport-id"><?= $volunteer_serial ?></div>

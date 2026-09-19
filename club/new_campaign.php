@@ -36,7 +36,7 @@ include __DIR__ . '/../partials/header.php';
         <div style="margin-bottom:var(--sp-6);">
             <h1 class="page-title"><?= svg_icon('plus-circle', 22) ?> نشر فرصة تطوعية جديدة</h1>
             <p style="color:var(--c-text-muted);font-size:.9rem;margin-top:6px;">
-                سيتم إشعار المتطوعين المتابعين لناديكم فور نشر هذه الفرصة في منصة مُبادِر.
+                سيتم إشعار المتطوعين المتابعين لناديكم فور نشر هذه الفرصة في منصة <?= APP_NAME ?>.
             </p>
         </div>
 
