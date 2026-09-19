@@ -1,0 +1,57 @@
+# ==============================================================================
+# Mobadir (مُبادِر) — Production Security & Routing Configuration
+# Optimized for Apache, cPanel, and Shared Hosting (e.g., InfinityFree)
+# ==============================================================================
+
+# Disable directory browsing
+Options -Indexes
+
+# Prevent server signature disclosure
+ServerSignature Off
+
+# UTF-8 default character set
+AddDefaultCharset UTF-8
+
+# ------------------------------------------------------------------------------
+# 1. Protect Sensitive Configuration & Database Files
+# ------------------------------------------------------------------------------
+<FilesMatch "(config\.php|database\.php|\.sql|\.md|\.log|\.env|\.git|\.bak|\.ini)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# ------------------------------------------------------------------------------
+# 2. Block Direct Access to Source / Internal Folders
+# ------------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(config|database|docs)/ - [F,L]
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 3. HTTP Security Headers (When mod_headers is available)
+# ------------------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Enable XSS filtering in browsers
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Referrer policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 4. Custom Error Handling (Graceful fallbacks)
+# ------------------------------------------------------------------------------
+ErrorDocument 403 /index.php?page=home
+ErrorDocument 404 /index.php

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="340" viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" direction="rtl">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#78350f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="340" fill="url(#grad)"/>
+  <rect width="800" height="340" fill="url(#glow)"/>
+  
+  <!-- Subtle pattern dots -->
+  <g opacity="0.12" fill="#ffffff">
+    <circle cx="50" cy="50" r="3"/><circle cx="100" cy="50" r="3"/><circle cx="150" cy="50" r="3"/>
+    <circle cx="50" cy="100" r="3"/><circle cx="100" cy="100" r="3"/><circle cx="150" cy="100" r="3"/>
+    <circle cx="50" cy="150" r="3"/><circle cx="100" cy="150" r="3"/><circle cx="150" cy="150" r="3"/>
+  </g>
+
+  <!-- Graphic emblem -->
+  <g transform="translate(60, 0)">
+    <circle cx="600" cy="140" r="40" fill="#f59e0b" opacity="0.4"/><path d="M520 250 Q 600 170 680 250 Z" fill="#d97706"/><path d="M590 120 C 580 90, 560 90, 550 110 C 570 120, 580 140, 595 180 Z" fill="#10b981"/><path d="M605 120 C 620 90, 640 90, 650 110 C 630 120, 620 140, 605 180 Z" fill="#10b981"/><rect x="596" y="170" width="8" height="70" fill="#92400e"/>
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="240" font-family="Tajawal, Segoe UI, sans-serif" font-size="28" font-weight="800" fill="#ffffff">تنظيف وتأهيل مسار الواحات التاريخية</text>
+  <text x="40" y="280" font-family="Tajawal, Segoe UI, sans-serif" font-size="16" font-weight="500" fill="#fbbf24">حماية التراث الواحاتي والبيئة الصحراوية</text>
+</svg>

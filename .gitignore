@@ -1,0 +1,29 @@
+# Mobadir .gitignore
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs & temporary files
+*.log
+*.tmp
+
+# Environment & local sensitive files
+.env
+config/config.local.php
+
+# User uploads (keep directory structures and default SVG illustrations)
+uploads/avatars/*
+!uploads/avatars/.gitkeep
+uploads/logos/*
+!uploads/logos/.gitkeep
+uploads/campaigns/*
+!uploads/campaigns/.gitkeep
+!uploads/campaigns/*.svg

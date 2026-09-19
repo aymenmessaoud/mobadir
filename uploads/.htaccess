@@ -1,0 +1,25 @@
+# Security Configuration for Mobadir Uploads
+# Prevent execution of any scripts or executable files uploaded by users
+
+Options -Indexes
+Options -ExecCGI
+
+<FilesMatch "\.(php|phtml|php[0-9]|phps|phar|pl|py|cgi|sh|bash|exe|jsp|asp|aspx)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Only allow safe static assets
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    <IfModule mod_authz_core.c>
+        Require all granted
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Allow from all
+    </IfModule>
+</FilesMatch>

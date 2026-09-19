@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="340" viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" direction="rtl">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c0519"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4c0519" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="340" fill="url(#grad)"/>
+  <rect width="800" height="340" fill="url(#glow)"/>
+  
+  <!-- Subtle pattern dots -->
+  <g opacity="0.12" fill="#ffffff">
+    <circle cx="50" cy="50" r="3"/><circle cx="100" cy="50" r="3"/><circle cx="150" cy="50" r="3"/>
+    <circle cx="50" cy="100" r="3"/><circle cx="100" cy="100" r="3"/><circle cx="150" cy="100" r="3"/>
+    <circle cx="50" cy="150" r="3"/><circle cx="100" cy="150" r="3"/><circle cx="150" cy="150" r="3"/>
+  </g>
+
+  <!-- Graphic emblem -->
+  <g transform="translate(60, 0)">
+    <rect x="540" y="130" width="30" height="90" rx="4" fill="#fb7185"/><rect x="575" y="120" width="35" height="100" rx="4" fill="#fda4af"/><rect x="615" y="140" width="28" height="80" rx="4" fill="#f43f5e"/><line x1="520" y1="225" x2="660" y2="225" stroke="#fff" stroke-width="3"/>
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="240" font-family="Tajawal, Segoe UI, sans-serif" font-size="28" font-weight="800" fill="#ffffff">تهيئة مكتبة المطالعة العمومية وفهرسة الكتب</text>
+  <text x="40" y="280" font-family="Tajawal, Segoe UI, sans-serif" font-size="16" font-weight="500" fill="#fb7185">ثقافة ومواطنة بمؤسسات الشباب</text>
+</svg>

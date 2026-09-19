@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="340" viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" direction="rtl">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#064e3b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="340" fill="url(#grad)"/>
+  <rect width="800" height="340" fill="url(#glow)"/>
+  
+  <!-- Subtle pattern dots -->
+  <g opacity="0.12" fill="#ffffff">
+    <circle cx="50" cy="50" r="3"/><circle cx="100" cy="50" r="3"/><circle cx="150" cy="50" r="3"/>
+    <circle cx="50" cy="100" r="3"/><circle cx="100" cy="100" r="3"/><circle cx="150" cy="100" r="3"/>
+    <circle cx="50" cy="150" r="3"/><circle cx="100" cy="150" r="3"/><circle cx="150" cy="150" r="3"/>
+  </g>
+
+  <!-- Graphic emblem -->
+  <g transform="translate(60, 0)">
+    <circle cx="600" cy="180" r="90" fill="#10b981" opacity="0.3"/><path d="M600 110 L640 180 L620 180 L650 230 L550 230 L580 180 L560 180 Z" fill="#34d399"/><rect x="594" y="230" width="12" height="30" fill="#064e3b"/>
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="240" font-family="Tajawal, Segoe UI, sans-serif" font-size="28" font-weight="800" fill="#ffffff">حملة تشجير وتهيئة الفضاءات الخضراء</text>
+  <text x="40" y="280" font-family="Tajawal, Segoe UI, sans-serif" font-size="16" font-weight="500" fill="#34d399">مؤسسات الشباب والبيئة</text>
+</svg>
